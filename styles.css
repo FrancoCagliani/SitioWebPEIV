@@ -200,31 +200,35 @@ body {
 }
 
 /* Badges (Etiquetas) */
-.badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.25rem 0.75rem;
-    border-radius: var(--radius-full);
-    font-family: var(--font-title);
-    font-weight: 600;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+.badge-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.badge-info {
+.badge-link:hover {
+    transform: translateY(-2px);
     background-color: var(--accent-glow);
-    color: var(--accent);
 }
 
-.badge-success {
-    background-color: var(--success-glow);
-    color: var(--success);
+/* Optional pulse animation for attention */
+@keyframes pulseBadge {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
-.badge-warning {
-    background-color: rgba(245, 158, 11, 0.15);
-    color: var(--warning);
+.badge-link:active {
+    animation: pulseBadge 0.3s ease;
 }
 
 /* NAV BAR */
@@ -453,7 +457,7 @@ body {
 }
 
 .ill-dot-red {
-    background-color: #ef4444;
+    background-color: var(--primary);
 }
 
 .ill-dot-yellow {
@@ -492,6 +496,19 @@ body {
     justify-content: center;
     font-family: var(--font-title);
     font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ill-node-circle:hover {
+    transform: scale(1.15);
+    filter: brightness(1.1);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.ill-node-circle:active {
+    transform: scale(0.95);
 }
 
 .ill-node-lines {

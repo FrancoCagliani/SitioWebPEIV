@@ -133,7 +133,7 @@
                             <div class="ill-line-lg"></div>
                             <div class="ill-line-sm"></div>
                         </div>
-                        <span class="badge badge-info" style="font-size: 0.65rem;">Fuentes</span>
+                        <a href="#recursos" class="badge badge-info badge-link" style="font-size: 0.65rem;">Fuentes</a>
                     </div>
                     <div class="ill-connector"></div>
                     <div class="ill-node">
@@ -142,16 +142,17 @@
                             <div class="ill-line-lg" style="width: 75%"></div>
                             <div class="ill-line-sm"></div>
                         </div>
-                        <span class="badge badge-warning" style="font-size: 0.65rem;">Ideas</span>
+                        <a href="#bitacora" class="badge badge-warning badge-link" style="font-size: 0.65rem;">Ideas</a>
                     </div>
                     <div class="ill-connector"></div>
                     <div class="ill-node">
-                        <div class="ill-node-circle" style="background-color: var(--success)">R</div>
+                        <div class="ill-node-circle" style="background-color: var(--success)">C</div>
                         <div class="ill-node-lines">
                             <div class="ill-line-lg" style="width: 50%"></div>
                             <div class="ill-line-sm"></div>
                         </div>
-                        <span class="badge badge-success" style="font-size: 0.65rem;">Contactos</span>
+                        <a href="#dialogos" class="badge badge-success badge-link"
+                            style="font-size: 0.65rem;">Contactos</a>
                     </div>
                 </div>
             </div>
@@ -192,7 +193,8 @@
                     <div class="resource-pedagogy">
                         <p class="resource-pedagogy-title">Valor Pedagógico</p>
                         <p class="resource-pedagogy-text">
-                            Aporta secuencias sobre cómo enseñar algoritmos, redes y arquitectura de computadoras sin
+                            Nota: Arreglar valor propio; Aporta secuencias sobre cómo enseñar algoritmos, redes y
+                            arquitectura de computadoras sin
                             recurrir únicamente al código de memoria, con fuerte base constructivista.
                         </p>
                     </div>
@@ -524,52 +526,13 @@
                         </article>
 
                     </div>
-
-                    <!-- Formulario Lateral -->
-                    <aside class="blog-form-card">
-                        <h3 class="form-title">Nueva Reflexión</h3>
-                        <p class="form-desc">Registra tus pensamientos pedagógicos para compartirlos en tu PLE.</p>
-
-                        <form id="newPostForm">
-                            <div class="form-group">
-                                <label for="postTitle" class="form-label">Título de la Entrada</label>
-                                <input type="text" id="postTitle" class="form-control"
-                                    placeholder="Ej. El rol del software libre" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="postCategory" class="form-label">Categoría temática</label>
-                                <select id="postCategory" class="form-control" required>
-                                    <option value="Reflexión">Reflexión</option>
-                                    <option value="Propuesta didáctica">Propuesta didáctica</option>
-                                    <option value="Pregunta abierta">Pregunta abierta</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="postContent" class="form-label">Contenido reflexivo</label>
-                                <textarea id="postContent" class="form-control" rows="5"
-                                    placeholder="Escribe aquí tu análisis o propuesta pedagógica..."
-                                    required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">
-                                <!-- Icono Agregar/Más SVG -->
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <line x1="12" x2="12" y1="5" y2="19" />
-                                    <line x1="5" x2="19" y1="12" y2="12" />
-                                </svg>
-                                Publicar en Bitácora
-                            </button>
-                        </form>
-                    </aside>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 3: Diálogos y Red de Aprendizaje (PLN) -->
+        <!-- SECCIÓN 3: Contactos y Diálogos de Red de Aprendizaje (PLN) -->
         <section id="dialogos" class="section-padding container">
-            <h2 class="section-title">Diálogos y Red de Aprendizaje (PLN)</h2>
+            <h2 class="section-title">Contactos y diálogos de Red de Aprendizaje (PLN)</h2>
             <p class="section-desc">
                 Mi Red Personal de Aprendizaje (Personal Learning Network). Los colegas y referentes
                 de quienes aprendo diariamente y con quienes debato propuestas pedagógicas digitales.
@@ -695,42 +658,6 @@
                         </div>
                     </div>
 
-                    <!-- Formulario de Consulta PLN -->
-                    <div class="contact-form-card">
-                        <h3 class="social-title">Escríbeme</h3>
-                        <p class="social-desc">¿Tienes alguna duda o quieres debatir un proyecto? Envíame un mensaje de
-                            contacto directo.</p>
-
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="contactName" class="form-label">Nombre Completo</label>
-                                <input type="text" id="contactName" class="form-control" placeholder="Ej. Ana Pérez"
-                                    required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contactEmail" class="form-label">Correo Electrónico</label>
-                                <input type="email" id="contactEmail" class="form-control" placeholder="ana@ejemplo.com"
-                                    required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contactMessage" class="form-label">Tu Mensaje</label>
-                                <textarea id="contactMessage" class="form-control" rows="4"
-                                    placeholder="¿En qué puedo ayudarte o qué te gustaría compartir?"
-                                    required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                <!-- Icono Enviar SVG -->
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <line x1="22" x2="11" y1="2" y2="13" />
-                                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                                </svg>
-                                Enviar Mensaje
-                            </button>
-                        </form>
-                    </div>
                 </aside>
             </div>
         </section>
