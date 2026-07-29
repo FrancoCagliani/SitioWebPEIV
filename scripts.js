@@ -111,22 +111,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- BOTONES "LEER MÁS / LEER MENOS" EN BITÁCORA ---
-    const blogFeed = document.getElementById('blogFeed');
+    // --- BOTONES "LEER MÁS / LEER MENOS" (UNIVERSAL) ---
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.read-more-btn');
+        if (!btn) return;
 
-    if (blogFeed) {
-        blogFeed.addEventListener('click', (e) => {
-            const btn = e.target.closest('.read-more-btn');
-            if (!btn) return;
-
-            const post = btn.closest('.blog-post');
-            if (!post) return;
-
+        // Si es una publicación de la bitácora tradicional
+        const post = btn.closest('.blog-post');
+        if (post) {
             const isExpanded = post.classList.contains('expanded');
             post.classList.toggle('expanded');
             btn.textContent = isExpanded ? 'Leer más' : 'Leer menos';
-        });
-    }
+            return;
+        }
+
+        // Si es una tarjeta de recurso o párrafo con texto inline (.more-text)
+        const parent = btn.closest('.resource-card') || btn.parentElement;
+        const moreText = parent ? parent.querySelector('.more-text') : null;
+        const dots = parent ? parent.querySelector('.dots') : null;
+
+        if (moreText) {
+            const isHidden = window.getComputedStyle(moreText).display === 'none';
+
+            if (isHidden) {
+                moreText.style.display = 'inline';
+                if (dots) dots.style.display = 'none';
+                btn.textContent = 'Leer menos';
+            } else {
+                moreText.style.display = 'none';
+                if (dots) dots.style.display = 'inline';
+                btn.textContent = 'Leer más';
+            }
+        }
+    });
 
     // --- FORMULARIO NUEVA ENTRADA DE BITÁCORA ---
     const newPostForm = document.getElementById('newPostForm');

@@ -1,3 +1,4 @@
+"
 <!DOCTYPE html>
 <html lang="es">
 
@@ -95,6 +96,7 @@
                     fuentes de información, reflexiones pedagógicas sobre el uso de tecnologías en el aula y los
                     diálogos con mi red personal de aprendizaje (PLN) mientras finalizo mis estudios y encaro mis
                     prácticas docentes.
+
                 </p>
                 <div class="hero-actions">
                     <a href="#recursos" class="btn btn-primary">
@@ -127,33 +129,43 @@
                         <div class="ill-dot ill-dot-green"></div>
                         <span class="ill-title">Bienvenidos</span>
                     </div>
-                    <div class="ill-node">
+
+                    <!-- Nodo 1: Fuentes -->
+                    <a href="#recursos" class="ill-node"
+                        style="text-decoration: none; color: inherit; cursor: pointer;">
                         <div class="ill-node-circle">F</div>
                         <div class="ill-node-lines">
                             <div class="ill-line-lg"></div>
                             <div class="ill-line-sm"></div>
                         </div>
-                        <a href="#recursos" class="badge badge-info badge-link" style="font-size: 0.65rem;">Fuentes</a>
-                    </div>
+                        <span class="badge badge-info badge-link" style="font-size: 0.65rem;">Fuentes</span>
+                    </a>
+
                     <div class="ill-connector"></div>
-                    <div class="ill-node">
+
+                    <!-- Nodo 2: Ideas -->
+                    <a href="#bitacora" class="ill-node"
+                        style="text-decoration: none; color: inherit; cursor: pointer;">
                         <div class="ill-node-circle" style="background-color: var(--warning)">I</div>
                         <div class="ill-node-lines">
                             <div class="ill-line-lg" style="width: 75%"></div>
                             <div class="ill-line-sm"></div>
                         </div>
-                        <a href="#bitacora" class="badge badge-warning badge-link" style="font-size: 0.65rem;">Ideas</a>
-                    </div>
+                        <span class="badge badge-warning badge-link" style="font-size: 0.65rem;">Ideas</span>
+                    </a>
+
                     <div class="ill-connector"></div>
-                    <div class="ill-node">
+
+                    <!-- Nodo 3: Contactos -->
+                    <a href="#dialogos" class="ill-node"
+                        style="text-decoration: none; color: inherit; cursor: pointer;">
                         <div class="ill-node-circle" style="background-color: var(--success)">C</div>
                         <div class="ill-node-lines">
                             <div class="ill-line-lg" style="width: 50%"></div>
                             <div class="ill-line-sm"></div>
                         </div>
-                        <a href="#dialogos" class="badge badge-success badge-link"
-                            style="font-size: 0.65rem;">Contactos</a>
-                    </div>
+                        <span class="badge badge-success badge-link" style="font-size: 0.65rem;">Contactos</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -165,13 +177,13 @@
             <h2 class="section-title">Fuentes de Información y Recursos</h2>
             <p class="section-desc">
                 Una selección de herramientas, portales y plataformas que utilizo activamente para fundamentar mis
-                planificaciones, buscar secuencias didácticas y enriquecer la enseñanza de las ciencias de la
+                planificaciones, buscar se cuencias didácticas y enriquecer la enseñanza de las ciencias de la
                 computación.
             </p>
 
             <div class="resources-grid" id="resourcesGrid">
 
-                <!-- Recurso 3 -->
+                <!-- Recurso 1 -->
                 <article class="resource-card"
                     data-search="program.ar sadosky ciencias computacion didactica programacion escolar">
                     <div class="resource-header">
@@ -184,22 +196,32 @@
                         </div>
                         <span class="badge badge-info">Currícula Computación</span>
                     </div>
-                    <h3 class="resource-title">Iniciativa Program.AR</h3>
+                    <h3 class="resource-title">Program.AR - Fundación Sadosky</h3>
                     <p class="resource-desc">
-                        Propuesta nacional de la Fundación Sadosky para promover las Ciencias de la Computación en
-                        escuelas mediante manuales gratuitos para docentes y capacitaciones con didácticas
-                        especializadas.
+                        Durante los primeros trabajos prácticos de la materia tuve que planificar una clase
+                        simulada sobre Inteligencia Artificial. En ese momento intenté organizar la propuesta
+                        únicamente con los conocimientos que poseía sobre el tema y con ayuda de herramientas de
+                        IA, pero advertí<span class="dots">...</span>
+                        <span class="more-text" style="display: none;">
+                            que me resultaba difícil estructurar una secuencia de enseñanza coherente.
+                            Recién a partir de la exploración realizada en este Trabajo Práctico Nº 5 descubrí las
+                            secuencias
+                            didácticas de Program.AR y materiales específicos para la enseñanza de la Inteligencia
+                            Artificial. Esto me permitió comprender que conocer un contenido no garantiza saber
+                            enseñarlo, sino que es necesario contar con propuestas pedagógicas que orienten la
+                            selección,
+                            organización y secuenciación de las actividades. Este descubrimiento modificó mi forma de
+                            planificar las clases y pasó a formar parte de los recursos que utilizaré en mi futura
+                            práctica
+                            docente.
+                        </span>
+                        <button class="btn btn-outline read-more-btn" type="button">Leer más</button>
                     </p>
-                    <div class="resource-pedagogy">
-                        <p class="resource-pedagogy-title">Valor Pedagógico</p>
-                        <p class="resource-pedagogy-text">
-                            Nota: Arreglar valor propio; Aporta secuencias sobre cómo enseñar algoritmos, redes y
-                            arquitectura de computadoras sin
-                            recurrir únicamente al código de memoria, con fuerte base constructivista.
-                        </p>
-                    </div>
+
+
+
+                    <!-- Nota: Arreglar valor propio; Aporta secuencias sobre cómo enseñar algoritmos, redes y arquitectura de computadoras sin recurrir únicamente al código de memoria, con fuerte base constructivista. -->
                     <div class="resource-footer">
-                        <button class="btn btn-outline detail-btn" data-target="programar">Ver Detalle</button>
                         <a href="https://program.ar" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                             Visitar
                             <svg class="icon" viewBox="0 0 24 24">
@@ -210,44 +232,7 @@
                     </div>
                 </article>
 
-                <!-- Recurso 4 -->
-                <article class="resource-card"
-                    data-search="code.org pensamiento computacional bloques actividades desenchufadas escuela">
-                    <div class="resource-header">
-                        <div class="resource-icon-wrapper">
-                            <!-- Icono Puzzle/Rompecabezas SVG -->
-                            <svg class="icon icon-lg" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M6.34 17.66l-2.83 2.83M19.07 4.93l-2.83 2.83" />
-                            </svg>
-                        </div>
-                        <span class="badge badge-info">Plataforma Educativa</span>
-                    </div>
-                    <h3 class="resource-title">Code.org</h3>
-                    <p class="resource-desc">
-                        Plataforma interactiva internacional con lecciones estructuradas por edades, que introduce la
-                        lógica de la programación a través de bloques lúdicos y actividades offline.
-                    </p>
-                    <div class="resource-pedagogy">
-                        <p class="resource-pedagogy-title">Valor Pedagógico</p>
-                        <p class="resource-pedagogy-text">
-                            Excelente andamiaje que permite la gamificación del aprendizaje y el seguimiento autónomo
-                            del alumno en nociones complejas como bucles, condicionales y eventos.
-                        </p>
-                    </div>
-                    <div class="resource-footer">
-                        <button class="btn btn-outline detail-btn" data-target="codeorg">Ver Detalle</button>
-                        <a href="https://code.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                            Visitar
-                            <svg class="icon" viewBox="0 0 24 24">
-                                <path
-                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Recurso 5 -->
+                <!-- Recurso 2 -->
                 <article class="resource-card"
                     data-search="scratch mit bloques programacion interactiva juego historia">
                     <div class="resource-header">
@@ -262,21 +247,28 @@
                         </div>
                         <span class="badge badge-info">Software Educativo</span>
                     </div>
-                    <h3 class="resource-title">Scratch (MIT)</h3>
+
+                    <h3 class="resource-title">Pilas Bloques</h3>
                     <p class="resource-desc">
-                        Entorno y comunidad de programación visual en bloques diseñado por el MIT, que permite a
-                        estudiantes crear sus propios proyectos multimedia como historias, animaciones and videojuegos.
+                        Después de descubrir las secuencias didácticas de Program.AR, busqué una herramienta que
+                        permitiera llevar esa forma de planificar a la práctica. Si bien ya conocía Scratch y
+                        Code.org<span class="dots">...</span>
+
+                        <span class="more-text" style="display: none;">
+                            , descubrí Pilas Bloques, otra alternativa que organizaba el aprendizaje mediante desafíos
+                            progresivos, lo que facilitaba la construcción de una secuencia didáctica para estudiantes
+                            que se iniciaban en la programación. A partir de esta experiencia diseñé una nueva clase
+                            simulada utilizando Pilas Bloques, reemplazando la propuesta inicial sobre Inteligencia
+                            Artificial. Comprendí que la selección de una herramienta tecnológica debe responder tanto a
+                            criterios pedagógicos como a los objetivos de aprendizaje y a las características del grupo
+                            de estudiantes.
+                        </span>
+
+                        <button class="btn btn-outline read-more-btn" type="button">Leer más</button>
                     </p>
-                    <div class="resource-pedagogy">
-                        <p class="resource-pedagogy-title">Valor Pedagógico</p>
-                        <p class="resource-pedagogy-text">
-                            Fomenta el espiral del aprendizaje creativo (imaginar, crear, jugar, compartir, reflexionar)
-                            eliminando la frustración por errores de sintaxis en el código.
-                        </p>
-                    </div>
+
                     <div class="resource-footer">
-                        <button class="btn btn-outline detail-btn" data-target="scratch">Ver Detalle</button>
-                        <a href="https://scratch.mit.edu" target="_blank" rel="noopener noreferrer"
+                        <a href="https://pilasbloques.program.ar" target="_blank" rel="noopener noreferrer"
                             class="btn btn-primary">
                             Visitar
                             <svg class="icon" viewBox="0 0 24 24">
@@ -287,7 +279,7 @@
                     </div>
                 </article>
 
-                <!-- Recurso 6 -->
+                <!-- Recurso 3 -->
                 <article class="resource-card"
                     data-search="educar portal secuencias didacticas multimedia formacion docente">
                     <div class="resource-header">
@@ -302,18 +294,25 @@
                     </div>
                     <h3 class="resource-title">Portal Educ.ar</h3>
                     <p class="resource-desc">
-                        Repositorio gubernamental argentino que ofrece contenidos digitales curriculares, series de
-                        televisión de Canal Encuentro orientadas al aula, infografías y cursos libres para docentes.
+                        Al explorar Educ.ar durante este Trabajo Práctico Nº 5 descubrí un portal educativo que hasta
+                        entonces desconocía. Su contenido me permitió comprender<span class="dots">...</span>
+
+                        <span class="more-text" style="display: none;">
+                            que existen repositorios
+                            especializados para docentes, donde es posible acceder a materiales audiovisuales, recursos
+                            digitales y propuestas de enseñanza elaboradas para el contexto escolar argentino. A partir
+                            de
+                            este descubrimiento comencé a valorar la importancia de seleccionar recursos confiables y
+                            con
+                            una intencionalidad pedagógica, en lugar de recurrir únicamente a búsquedas generales en
+                            Internet. Desde entonces, Educ.ar pasó a formar parte de mi entorno personal de aprendizaje
+                            y
+                            constituye una fuente de consulta para preparar futuras clases de Computación.
+                        </span>
+                        <button class="btn btn-outline read-more-btn" type="button">Leer más</button>
                     </p>
-                    <div class="resource-pedagogy">
-                        <p class="resource-pedagogy-title">Valor Pedagógico</p>
-                        <p class="resource-pedagogy-text">
-                            Provee material audiovisual de excelente calidad técnica y didáctica sobre historia de la
-                            tecnología, Internet, ciberseguridad y soberanía digital en nuestro país.
-                        </p>
-                    </div>
+
                     <div class="resource-footer">
-                        <button class="btn btn-outline detail-btn" data-target="educar">Ver Detalle</button>
                         <a href="https://www.educ.ar" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                             Visitar
                             <svg class="icon" viewBox="0 0 24 24">
@@ -339,7 +338,7 @@
                     <!-- Feed de Publicaciones -->
                     <div class="blog-feed" id="blogFeed">
 
-                        <!-- Post 3 -->
+                        <!-- Post 1 -->
                         <article class="blog-post"
                             data-search="tutoria universitaria secundario comparacion observacion practica docente computacion">
                             <div class="blog-meta">
@@ -360,16 +359,20 @@
                                 una base
                                 concreta para pensar la enseñanza, aunque el contexto es muy diferente al de una escuela
                                 secundaria.
-                                El estudiante universitario llega con una motivación más definida, generalmente eligió
-                                estar ahí.
-                                En el secundario, la computación puede ser una materia más en la grilla, y eso cambia
-                                todo: los
-                                tiempos, las estrategias, el vínculo. Me pregunto constantemente qué de lo que funciona
-                                en la
-                                tutoría puedo trasladar, y qué tengo que reaprender desde cero.
+
                             </p>
                             <div class="blog-full-content">
-                                <p>En la tutoría universitaria trabajo principalmente acompañando a estudiantes que ya
+                                <p> El estudiante universitario llega con una motivación más definida, generalmente
+                                    eligió
+                                    estar ahí
+                                    En el secundario, la computación puede ser una materia más en la grilla, y eso
+                                    cambia
+                                    todo: los
+                                    tiempos, las estrategias, el vínculo. Me pregunto constantemente qué de lo que
+                                    funciona
+                                    en la
+                                    tutoría puedo trasladar, y qué tengo que reaprender desde cero.
+                                    En la tutoría universitaria trabajo principalmente acompañando a estudiantes que ya
                                     tienen
                                     un objetivo claro: aprobar, entender un concepto, avanzar en la carrera. El rol es
                                     más de guía que
@@ -398,9 +401,10 @@
                                     equivocarse no dé
                                     vergüenza, especialmente cuando se programa frente a los compañeros.</p>
                                 <br>
-                                <p>¿Qué estrategias usan los docentes de computación del secundario para gestionar esa
+                                <p> Me pregunto ¿Qué estrategias usan los docentes de computación del secundario para
+                                    gestionar esa
                                     diversidad
-                                    inicial? Me gustaría escuchar experiencias concretas.</p>
+                                    inicial?</p>
                             </div>
                             <button class="btn btn-outline read-more-btn">Leer más</button>
                         </article>
@@ -426,16 +430,17 @@
                             <p class="blog-excerpt">
                                 Uno de los proyectos que más me entusiasma en este momento es el desarrollo de un
                                 videojuego
-                                ambientado en La Pampa, orientado a la concientización sobre la fauna pampeana. Es un
-                                proyecto
-                                que estoy desarrollando y que, más allá de su valor como producción propia, me abre una
-                                pregunta
-                                pedagógica muy concreta: ¿puede un videojuego creado por docentes en formación
-                                convertirse en un
-                                recurso educativo real para el aula?
+                                ambientado en La Pampa, orientado a la concientización sobre la fauna pampeana.
                             </p>
                             <div class="blog-full-content">
-                                <p>La idea surgió de pensar cómo combinar dos cosas que me apasionan: la programación y
+                                <p> Es un
+                                    proyecto
+                                    que estoy desarrollando y que, más allá de su valor como producción propia, me abre
+                                    una
+                                    pregunta
+                                    pedagógica muy concreta: ¿puede un videojuego creado por docentes en formación
+                                    convertirse en unLa idea surgió de pensar cómo combinar dos cosas que me apasionan:
+                                    la programación y
                                     el contexto
                                     local. La Pampa tiene una fauna riquísima y poco conocida incluso por sus propios
                                     habitantes. El
@@ -485,16 +490,18 @@
                             <p class="blog-excerpt">
                                 Cuando pienso en mis futuras prácticas docentes en el nivel secundario, una de las
                                 primeras preguntas
-                                que me surge es cómo introducir la programación de forma significativa. Mi apuesta es
+                                que me surge es cómo introducir la programación de forma significativa.
+                            </p>
+                            <div class="blog-full-content">
+                                Mi apuesta es
                                 comenzar con la programación por bloques: no como un fin en sí mismo, sino como una
                                 puerta
                                 de entrada
                                 al pensamiento computacional que permita a los estudiantes crear, experimentar y
                                 reflexionar sobre
                                 lo que están construyendo, antes de pasar a lenguajes de texto más formales.
-                            </p>
-                            <div class="blog-full-content">
-                                <p>Tradicionalmente la informática escolar se redujo al uso memoristico de definiciones
+                                <p>
+                                    Tradicionalmente la informática escolar se redujo al uso memoristico de definiciones
                                     teóricas.
                                     Hoy creo que el desafío es otro: que los estudiantes pasen de ser consumidores
                                     pasivos de
@@ -508,8 +515,7 @@
                                     abstracto:</p>
                                 <br>
                                 <p><strong>1. Exploración libre:</strong> Que los alumnos se familiaricen con la
-                                    interfaz por su
-                                    cuenta, y puedan crear libremente sus resoluciones. El error como parte del
+                                    interfaz, y puedan crear libremente sus resoluciones. El error como parte del
                                     aprendizaje, no como
                                     fracaso.
                                 </p>
@@ -718,4 +724,4 @@
     <div class="toast-container" id="toastContainer"></div>
 </body>
 
-</html>
+</html>"

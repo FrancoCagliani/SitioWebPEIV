@@ -475,6 +475,7 @@ body {
     margin-left: 0.5rem;
 }
 
+/* Configuración de la tarjeta completa (nodo) */
 .ill-node {
     display: flex;
     align-items: center;
@@ -483,6 +484,22 @@ body {
     border: 1px solid var(--border-color);
     padding: 0.75rem 1rem;
     border-radius: var(--radius-md);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* EFECTO HOVER: Eleva la tarjeta completa, hace un leve zoom e ilumina el borde */
+.ill-node:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px -4px var(--shadow-color),
+        0 0 15px var(--accent-glow);
+    border-color: var(--accent);
+}
+
+/* EFECTO ACTIVE: Respuesta táctil al hacer clic */
+.ill-node:active {
+    transform: translateY(-1px) scale(0.99);
 }
 
 .ill-node-circle {
@@ -544,6 +561,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 2rem;
+    align-items: start;
 }
 
 .resource-card {
